@@ -1,0 +1,28 @@
+{
+  "manifest_version": 2,
+
+  "name": "Clean.me",
+  "description": "This extension shows a Google Image search result for the current page",
+  "version": "1.0",
+
+  "browser_action": {
+  	"default_title": "bird up",
+    "default_icon": "clean.png",
+    "default_popup": "popup.html"
+  },
+
+    "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["bundle.js"]
+    }
+  ],
+
+  "permissions": [
+    "activeTab",
+    "https://ajax.googleapis.com/",
+    "downloads"
+
+  ]
+
+}
