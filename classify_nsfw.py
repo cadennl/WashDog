@@ -13,6 +13,9 @@ import glob
 import time
 from PIL import Image
 from StringIO import StringIO
+
+from PIL import ImageFile
+ImageFile.LOAD_TRUNCATED_IMAGES = True
 import caffe
 
 
