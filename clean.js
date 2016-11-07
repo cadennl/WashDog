@@ -114,13 +114,15 @@ Scraper.prototype.scrape = function(callback){
 
 			response.on("data", function(data){
 				var current = previous + data;
+				console.log(current);
 
-				current.replace(/<img[\S\s]*?>/ig, function(responseData){
+				setTimeout(current.replace(/<img[\S\s]*?>/ig, function(responseData){
 					var loadedCheerio = cheerio.load(responseData);
 					var image = new Image(loadedCheerio("img")[0], ref.address);
 					console.log(image);
 					ref.emit("image", image);
-				});
+				}), 2000);
+
 
 				previous = data;
 			});
