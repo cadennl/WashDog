@@ -1,9 +1,9 @@
 {
   "manifest_version": 2,
 
-  "name": "Clean.me",
-  "description": "This extension shows a Google Image search result for the current page",
-  "version": "1.0",
+  "name": "WashDog",
+  "description": "experimental",
+  "version": "0.1",
 
   "browser_action": {
   	"default_title": "bird up",
