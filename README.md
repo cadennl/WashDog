@@ -35,11 +35,5 @@ Chrome and then to the settings icon
 
 
 ##TODO
- 
-+ Implement scrape of all <img> tags
-
-+ Implement parsing of CSS attribute background-image
-
-+ Add exchange of data between client and server
 
 + Configure automated Docker image build correctly 
